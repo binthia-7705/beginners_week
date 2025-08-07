@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .hero
+        {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/13837.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container
+        {
+            width: 800px;
+            height: 300px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .clock
+        {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .clock span
+        {
+            font-size: 70px;
+            width: 110px;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+        }
+        .clock span.hrs::after
+        {
+            content: 'Hours';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            font-size: 20px;
+            color: white;
+            background: transparent;
+            border-radius: 0;
+            transform: translate(-50%, 0);
+        }
+        .clock span.mins::after
+        {
+            content: 'Minutes';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            font-size: 20px;
+            color: white;
+            background: transparent;
+            border-radius: 0;
+            transform: translate(-50%, 0);
+        }
+        .clock span.secs::after
+        {
+            content: 'Seconds';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            font-size: 20px;
+            color: white;
+            background: transparent;
+            border-radius: 0;
+            transform: translate(-50%, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="clock">
+                <span class="hrs" id="hrs">00</span>
+                <span>:</span>
+                <span class="mins" id="mins">00</span>
+                <span>:</span>
+                <span class="secs" id="secs">00</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
