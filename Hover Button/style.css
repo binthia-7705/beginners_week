@@ -1,0 +1,33 @@
+body
+{
+    background-image: url('https://media.istockphoto.com/id/1158035804/photo/watercolor-chaotic-texture.jpg?s=612x612&w=0&k=20&c=5lKWy2qC9xCktMqYo4XPTQp9pKscVu_aJ4GgvB3JgHM=');
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 
+        background-color 0.3s,
+        border-radius 0.3s,
+        width 0.3s,
+        height 0.3s;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    display: block;
+    margin: 60px auto;
+    font-size: 60px;
+}
+
+button:hover {
+    background-color: aqua;
+    color: black;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+
